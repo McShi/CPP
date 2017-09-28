@@ -59,7 +59,7 @@ namespace CPP
 
 
             //Console.WriteLine("Please enter a letter.");
-            string userLetter = Console.ReadLine().ToLower();
+            //string userLetter = Console.ReadLine().ToLower();
             //char yourLetter = char.Parse(userLetter);
 
             //switch(yourLetter)
@@ -84,24 +84,40 @@ namespace CPP
             //        break;
             //}
 
+            //Console.WriteLine("Please enter a number.");
+            //int firstNumber = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Please enter another number.");
+            //int secondNumber = int.Parse(Console.ReadLine());
+
+            //if (firstNumber > secondNumber)
+            //{
+            //    Console.WriteLine(firstNumber + " is the greater number.");
+            //}
+            //else if (secondNumber > firstNumber)
+            //{
+            //    Console.WriteLine(secondNumber + " is the greater number.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("These numbers are equal.");
+            //}
+
+
             Console.WriteLine("Please enter a number.");
             int firstNumber = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Please enter another number.");
             int secondNumber = int.Parse(Console.ReadLine());
 
-            if (firstNumber > secondNumber)
-            {
-                Console.WriteLine(firstNumber + " is the greater number.");
-            }
-            else if (secondNumber > firstNumber)
-            {
-                Console.WriteLine(secondNumber + " is the greater number.");
-            }
-            else
-            {
-                Console.WriteLine("These numbers are equal.");
-            }
+            Console.WriteLine("Please enter an additional number.");
+            int thirdNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter a final number.");
+            int fourthNumber = int.Parse(Console.ReadLine());
+
+            double sum = firstNumber + secondNumber + thirdNumber + fourthNumber;
+            Console.WriteLine("The average is " + (sum / 4));
 
         }
     }
